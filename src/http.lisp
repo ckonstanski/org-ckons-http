@@ -1,7 +1,7 @@
 ;;; -*- Mode: Lisp; Syntax: ANSI-Common-Lisp; Base: 10 -*-
 (declaim (optimize (speed 0) (safety 3) (debug 3)))
 
-(in-package #:org-ckons-http)
+(in-package :org-ckons-http)
 
 (defmacro with-cookie-jar (&rest body)
   `(let ((cookie-jar (make-instance 'drakma:cookie-jar)))

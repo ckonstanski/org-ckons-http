@@ -6,7 +6,7 @@
 (defpackage :org-ckons-http
   (:use :cl))
 
-(in-package #:org-ckons-http)
+(in-package :org-ckons-http)
 
 ;;; XXX fix this, it's not correct
 (defun html-reserved-p (c)

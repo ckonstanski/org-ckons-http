@@ -1,10 +1,10 @@
 ;;; -*- Mode: Lisp; Syntax: ANSI-Common-Lisp; Base: 10 -*-
 (declaim (optimize (speed 0) (safety 3) (debug 3)))
 
-(in-package #:cl)
+(in-package :cl)
 
-(defpackage #:org-ckons-http-system (:use #:cl #:asdf))
-(in-package #:org-ckons-http-system)
+(defpackage :org-ckons-http-system (:use :cl :asdf))
+(in-package :org-ckons-http-system)
 
 (defmacro do-defsystem (&key name version maintainer author description long-description depends-on components)
   `(defsystem ,name
