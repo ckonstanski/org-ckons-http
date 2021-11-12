@@ -3,7 +3,7 @@
 
 (in-package :org-ckons-http)
 
-(defmacro with-cookie-jar (&rest body)
+(defmacro with-cookie-jar (&body body)
   `(let ((cookie-jar (make-instance 'drakma:cookie-jar)))
      ,@body))
 
