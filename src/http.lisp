@@ -12,6 +12,7 @@
                        &key
                          (method :get)
                          (content-type "application/x-www-form-urlencoded")
+                         (parameters nil)
                          (content nil)
                          (user-agent :firefox)
                          (redirect t)
@@ -25,6 +26,7 @@
                        :cookie-jar cookie-jar
                        :method method
                        :content-type content-type
+                       :parameters parameters
                        :content content
                        :user-agent user-agent
                        :redirect redirect
